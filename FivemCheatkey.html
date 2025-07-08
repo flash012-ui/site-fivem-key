@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FiveM Cheat Key Verification</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 350px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #222;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00cc66;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .valid {
+      color: #00ff88;
+    }
+
+    .invalid {
+      color: #ff4444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Insert FiveM Cheat Key</h1>
+  <input type="text" id="keyInput" placeholder="Enter your key here">
+  <button onclick="checkKey()">Submit</button>
+  <div class="message" id="messageBox"></div>
+
+  <script>
+    const validKeys = [
+      // 🕐 1-Day Keys
+      "1-day_key/fivemcheatsecretkey1",
+      "1-day_key/fivemcheatsecretkey436",
+      "1-day_key/fivemcheatsecretkey3463",
+      "1-day_key/fivemcheatsecretkey37234",
+      "1-day_key/fivemcheatsecretkey147338",
+      "1-day_key/fivemcheatsecretkey11234257",
+      "1-day_key/fivemcheatsecretkey8924",
+      "1-day_key/fivemaccesskey3121",
+      "1-day_key/fivemfreeaccess1290",
+      "1-day_key/fivemtestkey0987",
+
+      // 📆 7-Day Keys
+      "7-day_key/fivemweekaccess1023",
+      "7-day_key/fivemtestweek3847",
+      "7-day_key/fivemcheatweek9999",
+      "7-day_key/secretfivemkey7777",
+      "7-day_key/fivemweekunlock8712",
+      "7-day_key/accesscheatfivem0001",
+      "7-day_key/fivemloadweek2342",
+      "7-day_key/cheatfivemdayseven111",
+      "7-day_key/keyforfivemweek442",
+      "7-day_key/weeklyfivemcode2299",
+
+      // 🗓️ 1-Month Keys
+      "1-month_key/fivemcheatmonthkey1",
+      "1-month_key/cheatfivemlongaccess",
+      "1-month_key/fivemloaderkey30d",
+      "1-month_key/fivemtrialmonthly",
+      "1-month_key/monthlyfivem9874",
+      "1-month_key/fivempaidaccess01",
+      "1-month_key/fullmonthfivemcode",
+      "1-month_key/validfivem30daykey",
+      "1-month_key/keyaccessmonthfivem",
+      "1-month_key/monthtrialfivem33",
+
+      // 🏆 Lifetime Keys
+      "lifetime_key/fivemeternalcheat1",
+      "lifetime_key/fullaccessfivem123",
+      "lifetime_key/fivemunlockedlife0",
+      "lifetime_key/fivemloaderforever",
+      "lifetime_key/fivemcheatpro1337",
+      "lifetime_key/cheatfivemunlimkey",
+      "lifetime_key/infiniteloadfivem1",
+      "lifetime_key/fivemaccessforever",
+      "lifetime_key/fivemlifetimeowner",
+      "lifetime_key/permanentfivemkey"
+    ];
+
+    function checkKey() {
+      const keyInput = document.getElementById("keyInput").value.trim();
+      const messageBox = document.getElementById("messageBox");
+
+      if (validKeys.includes(keyInput)) {
+        messageBox.innerHTML = "✅ Valid key! DM the owner on Discord with proof and you will get the loader!";
+        messageBox.className = "message valid";
+      } else {
+        messageBox.innerHTML = "❌ Invalid key. Please try again.";
+        messageBox.className = "message invalid";
+      }
+    }
+  </script>
+
+</body>
+</html>
